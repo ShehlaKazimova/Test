@@ -33,15 +33,14 @@ const TestComponent = () => {
     }
     setCurrentQuestionSet(currentQuestionSet + 1);
     setSetCompleted([...setCompleted.slice(0, currentQuestionSet), true, ...setCompleted.slice(currentQuestionSet + 1)]);
-    window.scrollTo(0, 0); // Scroll to the top
+    window.scrollTo(0, 0); 
   };
 
 
 
   const prevQuestions = () => {
     setCurrentQuestionSet(currentQuestionSet - 1);
-    window.scrollTo(0, 0); // Scroll to the top
-
+    window.scrollTo(0, 0); 
   };
 
   const submitAnswers = () => {
@@ -74,7 +73,7 @@ const TestComponent = () => {
 
   const trueOptions = ['Bəli',
     'Paylaşmaq', 'Fəaliyyətdə oluram', 'Sıx əlaqədə oluram', 'Özüm həll edirəm', 'Sevə-Sevə qarşılayıram', 'Bəli',
-    'Çox vacibdir', 'Bəli', 'Onun fikirlərini dinləmək',]; // Example options
+    'Çox vacibdir', 'Bəli', 'Onun fikirlərini dinləmək',]; 
   const falseOptions = [' Xeyr',
     'Yalnız olmaq', 'Geri planda qalıram', 'Fikirlərimi qoruyuram', 'Başqalarının köməyini axtarıram'
     , 'Qaçıram', ' Xeyr', 'Yalnız olmağı tərəccüb edirəm', ' Xeyr', 'Öz fikirlərinizi bölüşmək',];
@@ -93,7 +92,7 @@ const TestComponent = () => {
         margin: 'auto',
         backgroundColor: isSelected ? '#a9a9a92e' : '#fff',
         marginBottom: isSelected ? '7px' : '0',
-        border: errors[i] ? '1px solid red' : '1px solid transparent' // Conditionally set border style
+        border: errors[i] ? '1px solid red' : '1px solid transparent' 
       };
 
       const trueLabel = trueOptions[i % trueOptions.length];
